@@ -1,0 +1,66 @@
+@import url('utility.css');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+header{
+    background: linear-gradient(to left, black, rgb(63, 63, 63), rgb(63, 63, 63), black);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+}
+#navbar div{
+    margin: 20px auto;
+}
+#navbar div a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-weight: 600;
+    margin: 10px 20px 10px 20px;
+    border-radius: 12px;
+}
+#navbar div a:hover{
+    color: #ff00aa;
+}
+.model{
+    margin: 18px 16px 30px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    
+    border-radius: 12px;
+    color: rgb(54, 54, 54);
+    
+}
+#first{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    color: rgb(49, 49, 49);
+}
+#first .left_grid img{
+    height: 100px;
+}
+.left_grid{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 40px;
+}
+.right_grid{
+    font-size:large;
+    text-align: left;
+    margin-top: auto;
+    margin-left: 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}

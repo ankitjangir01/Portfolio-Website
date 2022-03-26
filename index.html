@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="flex items-center">
+            <div>
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="academics.html">
+                    Academics
+                </a>
+                <a href="skills.html">
+                    Skills
+                </a>
+                <a href="contact.html">
+                    Contact Me
+                </a>
+            </div>
+            
+        </nav>
+
+    </header>
+    <div class="model flex" id="first">
+        <div class="left">
+            <h1>Ankit Jangir</h1>
+            <br>
+            <h1>National Institute of Technology Raipur</h1>
+        </div>
+        <div class="right">
+            <img src="Ankit Jangir png.png" alt="">
+        </div>
+    </div>
+    <div class="model flex" id="second">
+        <div>
+            Roll No.: 19116010
+        </div>
+        <div>
+            Enrolment No.: 190755
+        </div>
+        <div>
+            Branch: Electronics and Communication Engineering
+        </div>
+    </div>
+    <div>
+        <br><br><br>
+    </div>
+    <div class="skill_sample" id="webdev">
+        <div class="text">Web<br>Development</div>
+        <!-- video sample slider  -->
+        <div class="slider" id="web_slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <div class="slide first"><img src="webdev carousel/2.png" alt=""></div>
+                <div class="slide"><img src="webdev carousel/1.jpg" alt=""></div>
+                <div class="slide"><img src="webdev carousel/3.png" alt=""></div>
+                <div class="slide"><img src="webdev carousel/4.png" alt=""></div>
+                <div class="slide"><img src="webdev carousel/5.png" alt=""></div>
+            </div>
+            <!--Manual Navigation-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <!--Graphic designs carousel-->
+    <div class="skill_sample" id="graphicdes">
+        <div class="text">Graphic<br>Designing and<br>Editing</div>
+        <div class="slider" id="graphic_slider">
+            <div class="slides">
+                <input type="radio" name="gradio-btn" id="gradio1">
+                <input type="radio" name="gradio-btn" id="gradio2">
+                <input type="radio" name="gradio-btn" id="gradio3">
+                <input type="radio" name="gradio-btn" id="gradio4">
+                <input type="radio" name="gradio-btn" id="gradio5">
+                <div class="slide first"><img src="graphic carousel/1.png" alt=""></div>
+                <div class="slide"><img src="graphic carousel/2.png" alt=""></div>
+                <div class="slide"><img src="graphic carousel/3.png" alt=""></div>
+                <div class="slide"><img src="graphic carousel/4.png" alt=""></div>
+                <div class="slide"><img src="graphic carousel/5.png" alt=""></div>
+            </div>
+            <!--Manual Navigation-->
+            <div class="navigation-manual">
+                <label for="gradio1" class="manual-btn"></label>
+                <label for="gradio2" class="manual-btn"></label>
+                <label for="gradio3" class="manual-btn"></label>
+                <label for="gradio4" class="manual-btn"></label>
+                <label for="gradio5" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // for first slider
+        var IDs=["radio1","radio2","radio3","radio4","radio5"];
+        let i=0;
+        const autoSlide = () => {
+            document.getElementById(IDs[i]).checked=true;
+            i = (i+1)%IDs.length;
+        }
+        setInterval(autoSlide,2000);
+
+        var gIDs=["gradio1","gradio2","gradio3","gradio4","gradio5"];
+
+        // for second slider
+        let j=0;
+        const autoSlide2 = () => {
+            document.getElementById(gIDs[j]).checked=true;
+            j = (j+1)%gIDs.length;
+        }
+        setInterval(autoSlide2,2000);
+    </script>
+
+
+
+</body>
+</html>
